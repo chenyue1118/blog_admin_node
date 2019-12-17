@@ -1,9 +1,8 @@
 .DS_Store
 node_modules
 
-# local env files
-.env.local
-.env.*.local
+# log
+access.log
 
 # Log files
 npm-debug.log*
