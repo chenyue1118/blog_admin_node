@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const routers = require('./router');
 
@@ -13,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
+
+app.use(cors());
 
 let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'});
 
