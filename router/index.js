@@ -1,6 +1,7 @@
 const express = require('express');
 const router = new express.Router();
 
+const dashboard = require('./dashboard');
 const users = require('./users');
 const article = require('./article');
 
@@ -8,6 +9,7 @@ const article = require('./article');
 // router.route('/')
 //     .all(controller.index);
 
+router.use('/dashboard', dashboard);
 router.use('/users', users);
 router.use('/article', article);
 
