@@ -26,3 +26,5 @@ router.route('/info')
     }
     res.send(data)
   }
+
+module.exports = router;
