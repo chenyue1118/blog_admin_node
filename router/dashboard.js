@@ -9,7 +9,7 @@ const router = new express.Router();
 * 访问量  集合
 */
 router.route('/info')
-  .get(req, res) => {
+  .get((req, res) => {
     const data = {
       'code': 20000,
       'msg': '登录成功',
@@ -25,6 +25,6 @@ router.route('/info')
       }
     }
     res.send(data)
-  }
+  })
 
 module.exports = router;
