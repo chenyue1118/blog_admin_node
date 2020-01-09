@@ -45,5 +45,16 @@ router.route('/list')
     })
   })
 
+router.route('/add')
+  .post((req, res) => {
+    console.log(req.method);
+    console.log(req.body);
+    res.send({
+      'code': 20000,
+      'msg': '创建成功',
+      'data': null
+    })
+  })
+
 
 module.exports = router;
