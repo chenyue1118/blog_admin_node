@@ -31,3 +31,8 @@
 ::ffff:127.0.0.1 - POST /v1/users/info HTTP/1.0 200 226 - 118.145 ms
 ::ffff:127.0.0.1 - POST /v1/users/info HTTP/1.0 200 226 - 0.377 ms
 ::ffff:127.0.0.1 - POST /v1/users/info HTTP/1.0 200 226 - 0.365 ms
+::ffff:10.100.92.77 - GET / HTTP/1.1 404 139 - 3.623 ms
+::ffff:10.100.92.77 - GET /test.html HTTP/1.1 404 148 - 0.528 ms
+::ffff:10.100.92.77 - GET /test.html HTTP/1.1 404 148 - 0.480 ms
+::ffff:10.100.92.77 - GET /test.html HTTP/1.1 404 148 - 0.369 ms
+::ffff:10.100.92.77 - GET /favicon.ico HTTP/1.1 404 150 - 0.306 ms
